@@ -30,7 +30,7 @@ const FilmForm = ({onFilmSubmit}) => {
     <form onSubmit={handleFormSubmit}>
       <input
         type="text"
-        placeholder="Name of film"
+        placeholder="Movie name"
         value={name}
         onChange={handleNameChange}
       />
@@ -42,7 +42,7 @@ const FilmForm = ({onFilmSubmit}) => {
       />
       <input
         type="submit"
-        value="Post"
+        value="Add Movie"
       />
     </form>
   )
