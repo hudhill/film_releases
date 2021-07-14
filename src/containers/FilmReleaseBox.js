@@ -2,9 +2,11 @@ import React, {useState} from 'react'
 import Heading from '../components/Heading'
 import FilmReleaseList from '../components/FilmReleaseList'
 import ViewMoreButton from '../components/ViewMoreButton'
+import FilmForm from '../components/FilmForm'
 import './FilmReleaseBox.css'
 
 const FilmReleaseBox = () => {
+
   const [films, setFilms] = useState([
     {
       id: 1,
@@ -32,9 +34,16 @@ const FilmReleaseBox = () => {
     }  
   ])
 
+  const addFilm = (submittedFilm) => {
+    submittedFilm.id = Date.now();
+    const updatedFilms = [...films, submittedFilm]
+    setFilms(updatedFilms)
+  }
+
   return (
     <div className="box">
       <Heading/>
+      <FilmForm onFilmSubmit={(film) => addFilm(film)}/>
       <hr/>
       <FilmReleaseList films={films}/>
       <hr/>
@@ -43,4 +52,4 @@ const FilmReleaseBox = () => {
   )
 }
 
-export default FilmReleaseBox
+export default FilmReleaseBox;
