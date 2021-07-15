@@ -1,4 +1,4 @@
-A simple list display and user input form built with JavaScript and React. It's currently set up to display upcoming film releases with hyperlinks to their IMDb pages. 
+A simple list display and user input form built with JavaScript in React. It's currently set up to display upcoming film releases with hyperlinks to their IMDb pages. 
 
 <img width="406" alt="Screenshot 2021-07-15 at 08 48 50" src="https://user-images.githubusercontent.com/78811642/125750310-c6de710f-b768-4b6f-9558-a725c6813128.png">
 
